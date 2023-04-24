@@ -79,7 +79,7 @@ try:
             time.sleep(6)
 
             # Click on "I'm a new customer".
-            third_btn = driver.find_element_by_xpath('/html/body/div[6]/span[1]/div/div/div/div/div/div[3]/div/div/div/div[2]/div[2]/button')
+            third_btn = driver.find_element_by_xpath('//button[@data-testid="newOrExisting-cta-new"]')
             third_btn.click()
             time.sleep(4)
             driver.save_screenshot(f"{product_name}/Phoneplan.png")
